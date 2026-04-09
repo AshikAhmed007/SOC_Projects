@@ -26,10 +26,12 @@ Open the Wazuh configuration file:
 `  sudo nano /var/ossec/etc/ossec.conf   `
 
 Enable global logging:
-`<global> `   
-`<logall>yes</logall>`    
-`<logall_json>yes</logall_json>`
-`</global>`
+```xml
+<global>   
+<logall>yes</logall>   
+<logall_json>yes</logall_json>
+</global>
+```
 
 ### 3\. Configuring FIM on Wazuh Agent
 
