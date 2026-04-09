@@ -39,12 +39,17 @@ On the Ubuntu agent, open the configuration file:
 
 Enable **syscheck** (FIM) and define directories for monitoring:
 
-`<syscheck>`    
-`<disabled>no</disabled>    `
-`<frequency>43200</frequency> `
-`<scan_on_start>yes</scan_on_start>    `
-`<directories>/etc,/usr/bin,/usr/sbin,/bin,/sbin,/boot</directories> `   
-`<directories check_all="yes" report_changes="yes" realtime="yes">/home/username/Desktop</directories></syscheck>`
+```xml
+<syscheck>
+    <disabled>no</disabled>
+    <frequency>43200</frequency> <!-- Executes every 12 hours -->
+    <scan_on_start>yes</scan_on_start>
+
+    <!-- Directories to monitor -->
+    <directories>/etc,/usr/bin,/usr/sbin,/bin,/sbin,/boot</directories>
+    <directories check_all="yes" report_changes="yes" realtime="yes">/home/username/Desktop</directories>
+</syscheck>
+```
 
 ### 4\. Restarting Wazuh Agent
 
