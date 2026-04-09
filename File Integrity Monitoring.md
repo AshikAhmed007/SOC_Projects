@@ -26,10 +26,10 @@ Open the Wazuh configuration file:
 `  sudo nano /var/ossec/etc/ossec.conf   `
 
 Enable global logging:
-`<global>    
-<logall>yes</logall>    
-<logall_json>yes</logall_json>
-</global>`
+`<global> `   
+`<logall>yes</logall>`    
+`<logall_json>yes</logall_json>`
+`</global>`
 
 ### 3\. Configuring FIM on Wazuh Agent
 
@@ -39,12 +39,12 @@ On the Ubuntu agent, open the configuration file:
 
 Enable **syscheck** (FIM) and define directories for monitoring:
 
-`<syscheck>    
-<disabled>no</disabled>    
-<frequency>43200</frequency> 
-<scan_on_start>yes</scan_on_start>    
-<directories>/etc,/usr/bin,/usr/sbin,/bin,/sbin,/boot</directories>    
-<directories check_all="yes" report_changes="yes" realtime="yes">/home/username/Desktop</directories></syscheck>`
+`<syscheck>`    
+`<disabled>no</disabled>    `
+`<frequency>43200</frequency> `
+`<scan_on_start>yes</scan_on_start>    `
+`<directories>/etc,/usr/bin,/usr/sbin,/bin,/sbin,/boot</directories> `   
+`<directories check_all="yes" report_changes="yes" realtime="yes">/home/username/Desktop</directories></syscheck>`
 
 ### 4\. Restarting Wazuh Agent
 
