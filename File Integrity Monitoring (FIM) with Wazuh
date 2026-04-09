@@ -1,0 +1,27 @@
+# 🛡️ File Integrity Monitoring (FIM) with Wazuh
+
+## 📌 Objective
+This project demonstrates the implementation and analysis of **File Integrity Monitoring (FIM)** using Wazuh.  
+The goal is to detect unauthorized file changes and ensure system security through continuous monitoring.
+
+---
+
+## ⚙️ Environment Setup
+
+- 🖥️ Operating System: Ubuntu (Linux)
+- 🛡️ Wazuh Manager: Installed on 192.168.0.152
+- 💻 Wazuh Agent: Installed on 192.168.0.181
+- 🔐 Access: Root / sudo privileges
+- ⚙️ Config File: `/var/ossec/etc/ossec.conf`
+
+---
+
+## 🔧 Configuration Steps
+
+### Access Wazuh Server (Manager)
+```bash
+ssh wazuh-user@192.168.0.152
+
+### Open Configuration File on Manager
+```bash
+sudo nano /var/ossec/etc/ossec.conf
