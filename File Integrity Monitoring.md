@@ -37,7 +37,10 @@ Enable global logging:
 
 On the Ubuntu agent, open the configuration file:
 
-`  ssh ubuntu@192.168.0.181sudo nano /var/ossec/etc/ossec.conf   `
+```bash
+ ssh ubuntu@192.168.0.181 
+ sudo nano /var/ossec/etc/ossec.conf
+```
 
 Enable **syscheck** (FIM) and define directories for monitoring:
 
