@@ -87,5 +87,7 @@ Alert Detection
     *   File added
         
     *   File modified
-        
+
     *   File deleted
+
+ <img width="1723" height="849" alt="ww" src="https://github.com/user-attachments/assets/95a6ef06-91b8-4155-a00b-6274ae65a258" />
