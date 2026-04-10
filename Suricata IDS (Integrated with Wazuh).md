@@ -100,7 +100,7 @@ Add:
 </localfile>
 </ossec_config>  
 ```
-### 🔹 Step 7: Restart Wazuh Agent
+### 🔹 Step 6: Restart Wazuh Agent
 ```bash
 sudo systemctl restart wazuh-agent
 ```
@@ -122,22 +122,8 @@ This performs a **TCP SYN scan**, which should trigger Suricata alerts.
     
 2.  Navigate to **Discover**
     
-3.  suricata
-    
-4.  Observe alerts such as:
-    
-    *   Nmap Scan Detection
+4.  Observe alerts: Suricata: ET-Alerts
         
-    *   Suspicious Traffic
         
-    *   Port Scanning Activity
-        
+<img width="940" height="573" alt="image" src="https://github.com/user-attachments/assets/cd472328-2cf5-45c7-b360-6bac2cfa72d7" />
 
-📸 Expected Output
-------------------
-
-*   Alerts generated in /var/log/suricata/eve.json
-    
-*   Events forwarded to Wazuh
-    
-*   Real-time detection visible in dashboard
