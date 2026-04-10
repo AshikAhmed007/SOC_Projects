@@ -22,7 +22,7 @@ The lab simulates real-world attack detection (e.g., Nmap scan) and visualizes a
 
 | Component        | Details                          |
 |------------------|----------------------------------|
-| OS               | Ubuntu Linux                    |
+| Wazuh-agent      | Ubuntu Linux                    |
 | IDS              | Suricata                        |
 | SIEM             | Wazuh Manager & Agent           |
 | Log File         | /var/log/suricata/eve.json      |
@@ -110,7 +110,7 @@ sudo systemctl restart wazuh-agent
 
 From Kali Linux:
 ```bash
-nmap -sS <UBUNTU_IP> [wazuh-agent]
+nmap -sS <UBUNTU_IP>
 ```
 
 This performs a **TCP SYN scan**, which should trigger Suricata alerts.
